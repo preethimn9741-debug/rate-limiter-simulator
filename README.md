@@ -51,11 +51,11 @@ Check installation:
 2️. Install Dependencies
 
    pip install -r requirements.txt
-   
+
 3. Running the Application
    
    python app.py
-
+   
 ## Expected output:
 
 Running on http://127.0.0.1:5000
