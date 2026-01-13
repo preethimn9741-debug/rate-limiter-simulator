@@ -1,72 +1,74 @@
 # Rate Limiter Simulator
 
-## 📌 Project Description
-This project is a **simple Python rate limiter simulator**.
-It processes a list of user requests with timestamps and determines whether each request is **ALLOWED** or **BLOCKED** based on a fixed rate limit rule.
-
+## Project Description
+A simple Rate limiter simulator that demonstrates CRUD operations, SQLite database integration, input validation, and negative test cases using pytest.
+This project is designed to be beginner-friendly, testable, and interview-ready.
 The script simulates rate limiting logic commonly used in APIs.
 
-##  Purpose of the Project
-This project is:
-- ✅ A learning exercise
-- ✅ A rate limiting simulation
-  
-It is designed to demonstrate how rate limiting works using time windows.
+## Features
 
-##  Tech Stack
-- **Language:** Python
-- **Libraries:** datetime, csv
-- **Execution:** Python script
-- **Output Format:** CSV
+Flask REST API
 
--##  How the Code Works
-- A predefined list of requests contains:
-  - Timestamp
-  - User ID
-- Each user is allowed **up to 5 requests per minute**
-- Requests beyond this limit are marked as **BLOCKED**
-- Allowed and blocked requests are stored with a status and reason
-- Results are written to an output CSV file
+Create, Read, Update, Delete (CRUD) tasks
 
----
+SQLite database integration
 
-## 📂 Project Files
-project/
-│
-├── ratte_limiter.py # Rate limiter script 
+Input validation & proper HTTP status codes
 
-├── output.csv # Generated output file
+Negative test scenarios with pytest
 
-├── README.md # Project documentation
+Clean and maintainable project structure
 
-Run the script using Python:
+## Project Structure
+rate_limiter/   (project root)
 
-python ratte_limiter.py
-Output
+├── app.py                  # Flask application
 
-The script generates a file named output.csv with the following columns:
-timestamp
-user
-status
-reason
+├── database.py             # Database CRUD logic (SQLite)
 
-Example output (output.csv)
+├── tasks.db                # SQLite database (auto-created)
 
-timestamp,user,status,reason
-2025-12-16 10:00:01,user1,ALLOWED,
-2025-12-16 10:00:50,user1,BLOCKED,Rate limit exceeded
+├── tests/
 
- Console Output
+│   └── test_rate_limiter.py  # Pytest test cases
 
-Each request result is also printed to the console during execution.
+├── requirements.txt
 
-Limitations
+└── README.md
 
-Request data is hardcoded in the script
-Rate limit values are fixed
-No command-line arguments
-No automated tests
+## Installation
 
-📌 Conclusion
-This project demonstrates a basic rate limiting algorithm using Python and time-based windows.
-It is useful for understanding how rate limiting logic can be implemented.
+1️. Prerequisites
+
+   Python 3.9+ pip
+
+Check installation:
+
+   python --version
+   pip --version
+
+2️. Install Dependencies
+   pip install -r requirements.txt
+
+3. Running the Application
+   python app.py
+
+
+## Expected output:
+
+Running on http://127.0.0.1:5000
+
+## terminal output screenshort 
+
+<img width="1257" height="710" alt="Screenshot 2026-01-13 143740" src="https://github.com/user-attachments/assets/fdd8162d-666b-483b-8ad2-cd73608d39b9" />
+
+## Conclusion
+
+This project is a solid foundation for learning Flask backend development.
+
+It follows best practices, handles edge cases correctly, and includes automated tests to ensure reliability and maintainability.
+
+
+ary
+
+Just say 👍
