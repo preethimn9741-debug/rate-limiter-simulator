@@ -49,7 +49,7 @@ Check installation:
 
 2️. Install Dependencies
    pip install -r requirements.txt
-
+   
 3. Running the Application
    python app.py
 
@@ -67,8 +67,3 @@ Running on http://127.0.0.1:5000
 This project is a solid foundation for learning Flask backend development.
 
 It follows best practices, handles edge cases correctly, and includes automated tests to ensure reliability and maintainability.
-
-
-ary
-
-Just say 👍
